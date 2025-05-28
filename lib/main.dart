@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
-import 'cashier_page.dart';
-
+import 'views/get_started_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'Ticketing App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        fontFamily: 'Inter',
+        scaffoldBackgroundColor: Colors.grey[100],
+      ),
+      home: GetStartedPage(),
       debugShowCheckedModeBanner: false,
-      title: 'Cashier App',
-      home: const CashierPage(),
     );
   }
 }
