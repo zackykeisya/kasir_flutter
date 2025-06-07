@@ -66,4 +66,5 @@ class DefaultFirebaseOptions {
     projectId: 'ticketing-app-bb28d',
     storageBucket: 'ticketing-app-bb28d.firebasestorage.app',
   );
+
 }
